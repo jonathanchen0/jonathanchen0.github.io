@@ -20,6 +20,77 @@
     </style>
 </head>
 <body>
+
+    <script>
+        // HTML CSS (Not Programming Language)
+        // JavaScript
+        // Og called LiveScript so not derived from Java
+        // Use JavaScript to manipulate web page
+        // not strict prog lang
+        // s1
+        'use strict';// makes strict
+        {//{} block of code, small world
+            const age1 = 20;// undefined, each variable is flexible, local
+            let age2;// define local variable 
+            var v1;// define global variable
+            age2 = 20;// age 2 is now number
+            age2 = 128.8// age2 is now double
+            age2 = 'Tom';// can also use" "
+            age2 = ``;//``
+
+            let name = "Tom";
+            let age = 20;
+
+            let str = `The name is ${name}. The age is ${age}`;
+
+            console.log(str);
+            //alert(str);
+
+            let stu;// undefined, local variable
+
+            // object, dictionary
+            stu = {
+                name: "Tom",
+                age: 20,
+                grade: 96.6,
+
+            };
+            console.log(stu.grade);
+
+            // array or list
+            let arr1;//local undefined
+            arr1 = ["Tom", "Jack"];
+            console.log(arr1.length);
+            console.log(arr1[1]);
+
+            //define function
+            // way 1:
+            function func1(p1,p2)// no let in parameter
+            {
+                return p1 + p2;// return is not mandatory
+            }
+            // way 2 (arrow function): 
+            let func2 = (p1, p2) =>
+            {
+                return p1 * p2;
+            };
+
+            console.log(func1(2.3, 3.0));
+            console.log(func2(2.3, 3.0));
+
+        }
+    </script>
+
+    <script>
+        // s2
+        "use strict";
+        {
+            // age2 = 20; cannot do this because age2 is in different scope
+            v1 = 20;
+
+        }
+    </script>
+
     <div id="div1"></div>
     <img id="img1" src="head1.png" />
     <img id="img2" src="b.svg" />
