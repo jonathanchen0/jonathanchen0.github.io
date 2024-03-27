@@ -31,15 +31,28 @@
 
     <title>MIS 3033 March 27</title>
     <link href="static/head1.png" rel="icon" />
+
+    <link href="site.css" rel="stylesheet" />
 </head>
 
 <body style="margin:10px;">
+
+    <div id="t1"></div>
+    <br />
+    <button id="b1" class="btn btn-secondary">
+        Load States
+    </button>
+
+    <script src="t1.js"></script>
+
+    <!-- Load Data button -->
+
     <div id="tbldiv"></div>
     <br />
     <button id="btn1" class="btn btn-success">
         Load Data
         <span>
-        <i class="bi bi-cloud-download"></i>
+            <i class="bi bi-cloud-download"></i>
         </span>
     </button>
     <script>
@@ -47,14 +60,12 @@
         let gridtbl = null;//global variable
 
         let btn1 = document.querySelector("#btn1");
-        btn1.addEventListener("click", async () =>
-        {
+        btn1.addEventListener("click", async () => {
             //alert("OK");
             showTbl();
         });
 
-        async function showTbl()
-        {
+        async function showTbl() {
             //we get the data
             let url = `https://juxinglong.github.io/static/data/cities.json`;
             let opts = {
@@ -64,8 +75,7 @@
 
             //show data in table gridjs
             let tbldiv = document.querySelector("#tbldiv");
-            if (gridtbl != null)
-            {
+            if (gridtbl != null) {
                 gridtbl.destroy();
             }
             tbldiv.innerHTML = ``;
