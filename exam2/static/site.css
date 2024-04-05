@@ -2,3 +2,102 @@ body
 {
     margin:10px;
 }
+#maindiv
+{
+    /*background-color:lightgreen;*/
+    width:1000px;
+    margin-right:auto;
+    margin-left:auto;
+}
+#header
+{
+/*    background-color:lightpink;
+*/    width:1000px;
+    height:100px;
+    display:flex;
+    flex-direction:row;
+}
+#headt {
+
+    font-size: 30pt;
+    color: dodgerblue;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-left:auto;
+    margin-top:25px;
+}
+#headimg
+{
+    display:flex;
+    flex-direction:row;
+    align-items:end;
+}
+#content {
+    margin-top:5px;
+   /* background-color: lightblue;*/
+    width: 960px;
+    display: flex;
+    flex-direction: row;
+    margin-left:auto;
+    margin-right:auto;
+}
+#leftdiv
+{
+    width:480px;
+    border:solid;
+    border-width:2px;
+    border-color:darkgray;
+    border-radius:10px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+
+}
+#ctext
+{
+    color:dodgerblue;
+    font-size:20pt;
+    font-weight:bold;
+    margin-left:auto;
+    margin-right:auto;
+}
+#cimg
+{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+}
+#rightdiv
+{
+    /*background-color:burlywood;*/
+    display:flex;
+    flex-direction:column;
+}
+#topright {
+    border: solid;
+    border-width: 2px;
+    border-color: darkgray;
+    border-radius: 10px;
+    width:480px;
+}
+#bottomright {
+    border: solid;
+    border-width: 2px;
+    border-color: darkgray;
+    border-radius: 10px;
+    width: 480px;
+}
+
+#footer
+{
+    width:1000px;
+    height:50px;
+    background-color:aliceblue;
+    color:darkgrey;
+    border-radius:5px;
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+}

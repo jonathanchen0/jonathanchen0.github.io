@@ -1,0 +1,61 @@
+body {
+    margin: 10px;
+}
+#maindiv {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    background-color: lightgreen;
+}
+#topbun {
+    height: 50px;
+    background-color: lightpink;
+    color: dodgerblue;
+    font-size: 20pt;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+.bugtext{
+    font-size:20px;
+    color:dimgray;
+}
+#bug{
+    width:400px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
+#lettuce {
+    margin-top: 10px;
+    background-color: lightcoral;
+    display: flex;
+    flex-direction: row;
+}
+#pesticide {
+    width: 800px;
+}
+.title{
+    font-size:30px;
+    font-weight:bold;
+}
+#downdiv {
+     display: flex;
+    flex-direction: row;
+}
+
+
+
+
+#bottombun {
+    height:50px;
+    background-color:#faf7f7;
+    color:dimgrey;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
